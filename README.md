@@ -27,4 +27,6 @@ npm run dev
 ```sh
 npm run build
 ```
-# Vue-firebase-live-chat
+# Test User Name & Password
+test@gmail.com
+123123
