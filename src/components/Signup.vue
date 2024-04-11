@@ -17,7 +17,7 @@
 import useSignup from "@/composable/useSignup";
 import { ref } from "vue";
 export default {
-  setup(props) {
+  setup(props,context) {
     let displayName = ref("");
     let email = ref("");
     let password = ref("");
@@ -30,7 +30,7 @@ export default {
         displayName.value
       );
       if (response) {
-        console.log(response.user);
+        context.emit("enterChatroom")
       }
     };
     return { displayName, email, password, signUP, error };
