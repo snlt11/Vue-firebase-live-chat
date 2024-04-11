@@ -1,23 +1,27 @@
-body{
+body {
     background: rgb(80, 139, 181);
     color: #444;
     font-family: "Noto Sans Old Persian", sans-serif;
     font-weight: 300;
     font-style: normal;
+    overflow: hidden;
 }
-.container{
-    width: 90%;
+
+.container {
+    width: 35%;
     max-width: 960px;
     margin: 80px auto;
     border-radius: 30px;
-    box-shadow: 2px 4px 6px rgba(28,6,49,0.1);
+    box-shadow: 2px 4px 6px rgba(28, 6, 49, 0.1);
     background: white;
 }
-.error{
+
+.error {
     color: #e02151;
     font-size: 14px;
 }
-button{
+
+button {
     text-decoration: none;
     background: #5283c9;
     color: white;

@@ -36,7 +36,7 @@ export default {
 
 <style>
 form {
-  margin: 10px;
+  /* margin: 10px; */
 }
 textarea {
   width: 100%;
@@ -45,8 +45,9 @@ textarea {
   padding: 10px;
   box-sizing: border-box;
   border: 0;
-  border-radius: 20px;
+  border-radius: 0px 0px 20px 20px;
   font-family: inherit;
   outline: none;
+  resize: none;
 }
 </style>

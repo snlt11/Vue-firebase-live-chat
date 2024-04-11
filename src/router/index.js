@@ -11,20 +11,28 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: HomeView,
+      beforeEnter(to, from, next) {
+        let user = auth.currentUser;
+        if (!user) {
+          next();
+        } else {
+          next({ name: "Chatroom" });
+        }
+      },
     },
     {
       path: "/chatroom",
       name: "Chatroom",
       component: Chatroom,
-      
-      beforeEnter(to,from,next){
+
+      beforeEnter(to, from, next) {
         let user = auth.currentUser;
-        if(user){
+        if (user) {
           next();
-        }else{
-          next({name:"home"});
+        } else {
+          next({ name: "home" });
         }
-      }
+      },
     },
   ],
 });
