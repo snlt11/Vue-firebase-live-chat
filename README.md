@@ -27,6 +27,10 @@ npm run dev
 ```sh
 npm run build
 ```
-# Test User Name & Password
+# Test User Name and Password
+```sh
 test@gmail.com
+```
+```sh
 123123
+```
