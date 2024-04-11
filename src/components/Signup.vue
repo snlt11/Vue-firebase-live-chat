@@ -8,7 +8,7 @@
       placeholder="Enter Your Password"
       v-model="password"
     />
-    <div class="error" v-if="error">{{error}}</div>
+    <div class="error" v-if="error">{{ error }}</div>
     <button>Signup</button>
   </form>
 </template>
@@ -17,7 +17,7 @@
 import useSignup from "@/composable/useSignup";
 import { ref } from "vue";
 export default {
-  setup(props,context) {
+  setup(props, context) {
     let displayName = ref("");
     let email = ref("");
     let password = ref("");
@@ -30,7 +30,7 @@ export default {
         displayName.value
       );
       if (response) {
-        context.emit("enterChatroom")
+        context.emit("enterChatroom");
       }
     };
     return { displayName, email, password, signUP, error };

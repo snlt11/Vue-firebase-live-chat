@@ -1,17 +1,11 @@
 <template>
   <RouterView />
-  
 </template>
 
 <script>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView } from "vue-router";
 
-export default {
-
-}
+export default {};
 </script>
 
-<style>
-
-
-</style>
+<style></style>
