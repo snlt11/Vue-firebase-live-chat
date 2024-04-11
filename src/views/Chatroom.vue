@@ -6,14 +6,16 @@
 </template>
 
 <script>
-import NewChatForm from '../components/NewChatForm.vue'
+import NewChatForm from "../components/NewChatForm.vue";
 import { watch } from "vue";
 import Navbar from "../components/Navbar.vue";
 import getUser from "@/composable/getUser";
 import { useRouter } from "vue-router";
 export default {
   components: {
-    NewChatForm, Navbar },
+    NewChatForm,
+    Navbar,
+  },
   setup() {
     let { user } = getUser();
     let router = useRouter();

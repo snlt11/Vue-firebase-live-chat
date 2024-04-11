@@ -16,4 +16,4 @@ const db = firebase.firestore();
 const auth = firebase.auth();
 const timestamp = firebase.firestore.FieldValue.serverTimestamp();
 
-export { db, auth,timestamp };
+export { db, auth, timestamp };
